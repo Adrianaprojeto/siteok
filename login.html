@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login JS</title>
+
+    
+</head>
+<body>
+    <a href="index.html"><img src="img/logo.jpg" alt=" Gamelok"></a>
+    <h1>Login do Usuário</h1>
+  
+    <form >
+        
+        <input type="text"placeholder="login" id="login"              >
+        <input type="password" placeholder="senha" id="senha">
+        <input type="submit">
+
+
+    </form>
+    
+
+
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+    width: 100px;
+    height: 100px;
+    background: turquoise;
+    transition: width 1s;
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+}
+
+div:hover {
+    width:300px;
+}
+</style>
+</head>
+<body>
+
+<BR>
+
+
+
+
+
+
+
+</BR>
+
+<!doctype html>
+            <html>
+              <head>
+              </head>
+              <body>
+                <button onclick="myFunction()">Clique aqui</button>
+                  <!-- botão que apaga o texto ao ser clicado -->
+                    <div id="contextText"><p>ACESSE O SEU CADASTRO PARA ACEITAR O CONTRATO </p></div>
+                    <!-- div com id -->
+              </body>                                                
+              <script>
+                function myFunction(){
+                  var x = document.getElementById('contextText');
+                  /* a variável x é o texto dentro da div com id="contextText" */
+                  if (x.style.display ==='none'){
+                    /* se o sytle da div for none, ou seja, estiver invisível... */
+                    x.style.display = 'block';
+                    /* ... então faça o style ser block, ou seja, ficar visível... */
+                  } else {
+                    x.style.display = 'none';
+                    /* ... caso contrário, (se já estiver visível) faça sumir.*/
+                  }
+                }
+              </script>
+              <!-- teste em seu arquivo scripts.js. Coloque o script no scripts.js e faça o link no HTML. -->
+            </html>      
+
+
+            <BR>
+            
+            
+            
+            </BR>
+
+
+            <!doctype html>
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  </head>
+  <body>
+    <form action="javascript:void(0);">
+      <label>Escolha seu sexo</label>
+      <input type="radio" name="sexo" id="feminino"><label>Feminino</label>
+      <input type="radio" name="sexo" id="masculino"><label>Masculino</label>
+      <input type="submit" id="button">
+    </form>
+  </body>
+
+  <script>
+   $('#button').click(function(){
+      if($('#feminino').is(':checked')){
+        alert("Você escolheu feminino");
+      }else if($('#masculino').is(':checked')){
+        alert('Você escolheu masculino');
+      }else{
+        alert('Você não escolheu');
+      }
+    });
+  </script>
+</html>

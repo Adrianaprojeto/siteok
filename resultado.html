@@ -1,0 +1,88 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <a href="index.html"><img src="img/logo.jpg" alt=" Gamelok"></a>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>tabela</title>
+    </head>
+    <body>
+        <table style="border: 2px solid black; padding: 3px">
+            <thead>
+                <tr style="background-color: #cccccc; border:1px">
+                    <th style="border: 1px solid grey; padding: 5px">TURMA A</th>
+                    <th style="border: 1px solid grey; padding: 5px">CLASSIFICADO</th>
+                    <th style="border: 1px solid grey; padding: 5px">RESULTADO</th>
+                    <th>FINAL</th>
+                </tr>
+            </thead>
+            <tbody> 
+                <tr>
+                    <td>A</td>
+                    <td>B</td>
+                    <td>C</td>
+                    <td>D</td>
+                </tr>
+                <tr>
+                    <td>E</td>
+                    <td>F</td>
+                    <td>G</td>
+                    <td>H</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset=utf-8>
+        <title>Meu primeiro site</title>
+    </head>
+<body>
+    <p>Clique no botão para mudar a cor do fundo. <code>curta!</code>.</p>
+    <button>Mudar a cor do fundo</button>
+</body>
+<script>
+    var btn = document.querySelector('button');
+
+    function random(number){
+        return Math.floor(Math.random()*(number+1));
+    }
+
+    btn.onclick = function (){
+    var rndCol = 'rgb('+ random(255)+','+random(255)+','+random(255)+')';
+        document.body.style.backgroundColor = rndCol;
+    }
+</script>
+
+<!-- A função document.querySelector serve para selecionar 
+     um elemento no código HTML5. A função random gera um 
+     número aleatório. A última função manipula um evento. 
+     O onClick define quando o usuário pode clicar sobre 
+     um botão. A variável rndColor está recebendo um valor
+     RGB. Perceba que é utilizada aspas simples ‘. Na
+     segunda função foi criado um valor random para buscar
+     um número aleatório, ou seja, o sistema retornará um 
+     número aleatório de 0 até 255. Foram passados três,
+     pois a junção do RGB (red, green e blue) gera uma cor.
+     Na última linha do código, antes de fechar o escopo
+     (chave }), o documento HTML5, em seu body todo 
+     (largura e altura), receberá um style de backgroundColor 
+     aleatório. -->
+</html>
+
