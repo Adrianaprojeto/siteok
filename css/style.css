@@ -148,17 +148,44 @@ align-items: center;
 }
 
 
+@media screen {
+
+    .container-grid {
+        width:  85vw;
+    }
+    
+}
 
 
-@media screen and (max-width:1100px)   {
+
+
+
+
+@media screen and (max-width:1000px)   {
 
     #barras {
-        display: flex ;
+        display: inline-block;
     }
 
-    #menu{
+    .menu{
         display: none;
+        position: absolute;
+        top: 80px;
+        right: 0px;
+        height: 400px;
+        width: 100vw;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgb(42, 6, 109);
     }
+
+    .cabecalho {
+
+        position: relative;
+    }
+
+    
 
 }
 
@@ -335,3 +362,65 @@ align-items: center;
 .contatos {
     flex-direction: column;
 }
+
+.rodape {
+    background-color:darkgrey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 400px; 
+    width: 100%;
+    padding: 100px;
+}
+
+.rodape h2 {
+    padding: 20px;
+}
+
+.coluna1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+}
+
+.coluna2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+}
+
+.coluna3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.posicao-logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav#menu  li:hover {
+    background-color: white;
+  }
+
+  nav#menu a:hover {
+    color: white;
+    background-color: #606060;
+    text-decoration: underline;
+  }

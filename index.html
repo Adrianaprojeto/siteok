@@ -14,7 +14,7 @@
        <header>
         <div class ="container-grid cabecalho">
         <a href="index.html"><img src="img/logo.jpg" alt="Logo Gamelok" ></a>
-         <nav id = "menu"   class ="menu">
+         <nav id = "menu"   class ="menu" >
                <a href="">inicio</a>
                <a href="horario.html">horário</a>
                <a href="campeonato.html">campeonato</a>
@@ -24,7 +24,7 @@
                <a href="login.html">login</a> 
 
          </nav>
-        <a href="#" id = "barras"><img class="icone-menu" src="img/bars.svg" alt = "botão menu"></a>
+        <a onclick="mostrarMenu()" href="#" id = "barras"><img class="icone-menu" src="img/bars.svg" alt = "botão menu"></a>
         </div>
        </header>  
        <br>
@@ -192,25 +192,54 @@
        </main> 
        <br>
 
-       <footer style="background-color: white;">
-        <img src="img/pgto.jpg" alt="pagamento">
-        <img src="img/logo.jpg" alt="logo">
-        <img src="img/envio.jpg" alt="forma de envio">
-        <img src="img/rede.jpg" alt="rede sociais">
-        
-        <div class="sociais">
-            <p>Faça Parte do nosso clan, receba notícias e promoçoes!</p>
-        <form action="">
-        <input id ="campo-email" type="email" placeholder=" E-mail" required>
-        <button onclick="cadastrarNewsLetter()">cadastrar</button>
-        
-        </form>
-        
-        
+       <footer class="rodape">
+        <div class="coluna1">
+            <h2>
+                Links Úteis
+            </h2>
+            <ul>
+                <li><a href="#">Inscrição</a></li>
+                <li><a href="#">Pagamento</a></li>
+                <li><a href="#">Suporte</a></li>
+                <li><a href="#">Central de Ajuda</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
+        <div class="coluna2">
+            <h2>
+                Páginas
+            </h2>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Horários</a></li>
+                <li><a href="#">Campeonato</a></li>
+                <li><a href="#">Resultado</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Login/Cadastro</a></li>
+            </ul>
+        </div>
+        <img src="img/logo.jpg" alt="Logo do rodapé">
+        <div class="coluna3">
+            <p>Faça parte do nosso clan, receba notícias e promoções!</p>
+            <form action="">
+              <input id ="campo-email" type="email" placeholder=" E-mail" required>
+              <button onclick="cadastrarNewsLetter()">cadastrar</button>
+              
+              </form>
+
+            <h2>Siga-nos em:</h2>
+            <div class="posicao-logos">
+                <img src="img/twitter.jpg" alt="Logo do twitter">
+                <img src="img/face.jpg" alt="Logo do Facebook">
+                <img src="img/youtube.jpg" alt="Logo do Youtube">
+            </div>
         </div>
         
-        
-        </footer>
+    </footer>
+<br>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
         <script src="js/scrpts.js"></script>  
         </body>
         </html> 
