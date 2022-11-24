@@ -148,17 +148,15 @@ align-items: center;
 }
 
 
-@media screen {
+@media screen and (max-width:1000px)   {
+
 
     .container-grid {
         width:  85vw;
     }
+
     
 }
-
-
-
-
 
 
 @media screen and (max-width:1000px)   {
@@ -204,7 +202,7 @@ align-items: center;
 .oferta {
     display: flex;
     justify-content: space-between;
-    height: 700px;
+    height: 800px;
     align-items: center;
     background-color: rgb(126, 126, 118);
 }
@@ -212,7 +210,7 @@ align-items: center;
 .produto1{
     position: absolute;
     width: 215px;
-    height: 260px;
+    height: 300px;
     left: 80px;
     top: 670px;
     background-color: #d9d9d9;
@@ -225,7 +223,7 @@ align-items: center;
 .produto2{
     position: absolute;
     width: 215px;
-    height: 260px;
+    height: 300px;
     left: 400px;
     top: 670px;
     background-color: #d9d9d9;
@@ -236,7 +234,7 @@ align-items: center;
 .produto3{
     position: absolute;
     width: 215px;
-    height: 260px;
+    height: 300px;
     left: 720px;
     top: 670px;
     background-color: #d9d9d9;
@@ -247,7 +245,7 @@ align-items: center;
 .produto4{
     position: absolute;
     width: 215px;
-    height: 260px;
+    height: 300px;
     left: 1050px;
     top: 670px;
     background-color: #d9d9d9;
@@ -258,7 +256,7 @@ align-items: center;
 .produto5{
     position: absolute;
     width: 215px;
-    height: 260px;
+    height: 300px;
     left: 80px;
     top: 980px;
     background-color: #d9d9d9;
@@ -269,7 +267,7 @@ align-items: center;
 .produto6{
     position: absolute;
     width: 215px;
-    height: 260px;
+    height: 300px;
     left: 400px;
     top: 980px;
     background-color: #d9d9d9;
@@ -280,7 +278,7 @@ align-items: center;
 .produto7{
     position: absolute;
     width: 215px;
-    height: 260px;
+    height: 300px;
     left: 720px;
     top: 980px;
     background-color: #d9d9d9;
@@ -291,7 +289,7 @@ align-items: center;
 .produto8{
     position: absolute;
     width: 215px;
-    height: 260px;
+    height: 300px;
     left: 1050px;
     top: 980px;
     background-color: #d9d9d9;
@@ -424,3 +422,5 @@ nav#menu  li:hover {
     background-color: #606060;
     text-decoration: underline;
   }
+
+  
